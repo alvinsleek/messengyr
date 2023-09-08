@@ -6,4 +6,13 @@ defmodule MessengyrWeb.PageController do
     # so skip the default app layout.
     render(conn, :home, layout: false)
   end
+
+  def login(conn, _params) do
+    render conn
+  end
+
+  def signup(conn, _params) do
+    render conn
+  end
+
 end
