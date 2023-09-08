@@ -18,6 +18,9 @@ defmodule MessengyrWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    get "/signup", PageController, :signup
+    get "/login", PageController, :login
   end
 
   # Other scopes may use custom stacks.
