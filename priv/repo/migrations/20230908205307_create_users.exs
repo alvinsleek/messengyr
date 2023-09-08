@@ -3,11 +3,14 @@ defmodule Messengyr.Repo.Migrations.CreateUsers do
 
   def change do
     create table(:users) do
-      add :username, :string
-      add :email, :string
+      add :username, :string, unique: true
+      add :email, :string, unique: true
       add :encrypted_password, :string
 
       timestamps()
     end
+
+    create unique_index(:users, [:username])
+    create unique_Index(:users, [:email])
   end
 end
