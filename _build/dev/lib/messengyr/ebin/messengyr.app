@@ -10,7 +10,7 @@
               {description,"messengyr"},
               {modules,['Elixir.Messengyr','Elixir.Messengyr.Application',
                         'Elixir.Messengyr.Mailer','Elixir.Messengyr.Repo',
-                        'Elixir.MessengyrWeb',
+                        'Elixir.Messengyr.User','Elixir.MessengyrWeb',
                         'Elixir.MessengyrWeb.CoreComponents',
                         'Elixir.MessengyrWeb.Endpoint',
                         'Elixir.MessengyrWeb.ErrorHTML',
